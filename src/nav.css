@@ -1,0 +1,54 @@
+:root {
+  --blue: #4066a5;
+  --black: #131821;
+  --darkgrey: #6a707b;
+  --grey: #e3e3e4;
+  --white: #f2f5fa;
+}
+
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.Nav a{
+    text-decoration: none;
+    color: var(--darkgrey);
+    font-size: 1.2rem;
+}
+
+.links{
+    display: flex;
+    gap: 1rem;
+    padding-right: 4rem;
+}
+
+.logozone{
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    padding-left: 4rem;
+}
+
+.logozone h1{
+    color: var(--black);
+}
+
+.logo{
+    font-size: 2.5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .logozone h2{
+        display: none;
+    }
+    .links{
+    padding-right: 2rem;
+    }
+    .logozone{
+    padding-left: 2rem;
+    }
+}
